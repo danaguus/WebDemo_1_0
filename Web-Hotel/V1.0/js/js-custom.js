@@ -20,4 +20,10 @@ document.addEventListener("DOMContentLoaded", function() {
     };
     var elems_Modal = document.querySelectorAll('.modal');
     var instances_Modal = M.Modal.init(elems_Modal, options_Modal);
+
+    var options_Carousel = {
+      indicators: true
+    };
+    var elems_Carousel = document.querySelectorAll('.carousel');
+    var instances_Carousel = M.Carousel.init(elems_Carousel, options_Carousel);
   });

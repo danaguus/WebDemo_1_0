@@ -223,11 +223,47 @@ footer {
   right: 5% !important;
 }
 
+.carousel {
+  margin-bottom: 30px !important;
+}
+.carousel .indicators {
+  bottom: -6.5% !important;
+}
+.carousel .indicators .indicator-item {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.carousel .indicators .indicator-item.active {
+  background-color: #2196f3;
+}
+.carousel .carousel-item {
+  width: 55% !important;
+  height: 89% !important;
+}
+.carousel .carousel-item > img {
+  border-radius: 4px;
+  height: 100%;
+  filter: grayscale(100%);
+  transition: filter 0.5s;
+}
+.carousel .carousel-item.active > img {
+  filter: grayscale(0);
+}
+
 @media only screen and (max-width: 600px) {
   .navbar-menu > a {
     width: 100% !important;
   }
   .container > .row {
     padding: 10px !important;
+  }
+  .carousel .carousel-item {
+    width: 100% !important;
+    height: 60% !important;
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  .carousel .carousel-item {
+    width: 80% !important;
   }
 }
