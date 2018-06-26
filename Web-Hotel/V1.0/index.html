@@ -17,7 +17,7 @@
     <header class="z-depth-4">
       <div class="row valign-wrapper">
         <div class="col s8 m9 l10 center-align">
-          <div class="row navbar-menu">
+          <div class="row navbar-menu section">
             <a href="#">Inicio</a>
             <a href="#" class="dropdown-trigger" data-target="company-info" >Nosotros</a>
             <ul id="company-info" class="dropdown-content">
@@ -25,7 +25,8 @@
               <li><a href="#!">¿Quienes somos?</a></li>
               <li><a href="#!">Reseña</a></li>
             </ul>
-            <a href="galery.html">Galeria</a>
+            <a href="#galery">Galeria</a>
+            <a href="#planes">Planes</a>
             <a href="#">Habitaciones</a>
             <a href="#">Contáctenos</a>
           </div>
@@ -131,6 +132,26 @@
             </div>
           </div>
         </div>
+        <!-- Galery row -->
+        <div class="row" >
+          <div class="col s12">
+            <h4 class="title">NUESTRA GALERIA</h4>
+          </div>
+          <div class="col s12 l10 offset-l1 section scrollspy" id="galery">
+          <div class="carousel">
+            <a class="carousel-item" href="#one!"><img src="img/galeria/0.jpg"></a>
+            <a class="carousel-item" href="#two!"><img src="img/galeria/1.jpg"></a>
+            <a class="carousel-item" href="#three!"><img src="img/galeria/2.jpg"></a>
+            <a class="carousel-item" href="#four!"><img src="img/galeria/3.jpg"></a>
+            <a class="carousel-item" href="#five!"><img src="img/galeria/4.jpg"></a>
+            <a class="carousel-item" href="#six!"><img src="img/galeria/5.jpg"></a>
+            <a class="carousel-item" href="#seven!"><img src="img/galeria/6.jpg"></a>
+            <a class="carousel-item" href="#eight!"><img src="img/galeria/7.jpg"></a>
+            <a class="carousel-item" href="#nine!"><img src="img/galeria/8.jpg"></a>
+            <a class="carousel-item" href="#ten!"><img src="img/galeria/9.jpg"></a>
+          </div>
+        </div>
+        </div>
       </div>
       <!-- Footer info row -->
       <div class="row footer-info blue">
@@ -193,7 +214,7 @@
         </div>
       </div>
       <div class="modal-footer blue lighten-4">
-        <a class="waves-effect waves-light btn-small blue rigth"><i class="material-icons right">check_box</i>Reservar</a>
+        <a id="reserve" class="waves-effect waves-light btn-small blue rigth"><i class="material-icons right">check_box</i>Reservar</a>
       </div>
     </div>
 

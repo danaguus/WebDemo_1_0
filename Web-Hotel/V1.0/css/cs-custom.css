@@ -42,7 +42,12 @@ footer {
   margin-bottom: 0 !important;
   padding-bottom: 0 !important;
 }
-
+.container .row > .row:not(:last-child) {
+  border-bottom-style: solid !important;
+  border-bottom-width: 0.01px !important;
+  border-bottom-color: rgba(0, 0, 0, 0.3) !important;
+  padding-bottom: 45px !important;
+}
 
 .navbar-menu > a {
   color: white;
@@ -236,17 +241,30 @@ footer {
   background-color: #2196f3;
 }
 .carousel .carousel-item {
-  width: 55% !important;
+  width: 56% !important;
   height: 89% !important;
 }
 .carousel .carousel-item > img {
   border-radius: 4px;
   height: 100%;
-  filter: grayscale(100%);
+  filter: grayscale(100%) blur(3px);
   transition: filter 0.5s;
 }
 .carousel .carousel-item.active > img {
-  filter: grayscale(0);
+  filter: grayscale(0) blur(0);
+}
+
+.toast {
+  color: #000 !important;
+}
+.toast.success {
+  background-color: #81c784 !important;
+}
+.toast.error {
+  background-color: #e57373 !important;
+}
+.toast.information {
+  background-color: #90caf9 !important;
 }
 
 @media only screen and (max-width: 600px) {
@@ -258,7 +276,7 @@ footer {
   }
   .carousel .carousel-item {
     width: 100% !important;
-    height: 60% !important;
+    height: 75% !important;
   }
 }
 
