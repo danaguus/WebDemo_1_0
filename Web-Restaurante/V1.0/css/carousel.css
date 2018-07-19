@@ -1,0 +1,23 @@
+body > ul {
+    width: 100%;
+}
+
+ul > li {
+    list-style-type: none;
+    position: absolute;
+    top: 0;
+    opacity: 0;
+    display: flex;
+    flex-flow: wrap;
+    text-align: justify;
+    vertical-align: middle;
+    padding: 3%;
+    transition: 1s opacity;
+}
+ul > li > * {
+    margin: auto;
+}
+
+.active {
+    opacity: 1;
+}

@@ -1,0 +1,166 @@
+.button.tiny {
+    height: 1.8rem !important;
+    width: 3rem;
+}
+.button.small {
+    height: 2.5rem !important;
+    width: 4rem;
+}
+.button.medium {
+    height: 3.8rem !important;
+    width: 7rem !important;
+}
+.button.large {
+    height: 5.5rem !important;
+    width: 9.5rem;
+}
+
+.button.tiny.rounded {
+    height: 1.12rem !important;
+    width: 1rem !important;
+    border-radius: 5px !important;
+}
+.button.small.rounded {
+    height: 2.3rem !important;
+    width: 2rem !important;
+    border-radius: 5px !important;
+}
+.button.medium.rounded {
+    height: 3.4rem !important;
+    width: 3rem !important;
+    border-radius: 5px !important;
+}
+.button.large.rounded {
+    height: 4.5rem !important;
+    width: 4rem !important;
+    border-radius: 5px !important;
+}
+
+.button.tiny.circle {
+    height: 1.2rem !important;
+    width: 1rem !important;
+    border-radius: 50% !important;
+}
+.button.small.circle {
+    height: 2.3rem !important;
+    width: 2rem !important;
+    border-radius: 50% !important;
+}
+.button.medium.circle {
+    height: 3.4rem !important;
+    width: 3rem !important;
+    border-radius: 50% !important;
+}
+.button.large.circle {
+    height: 4.5rem !important;
+    width: 4rem !important;
+    border-radius: 50% !important;
+}
+
+.btn-group {
+    width: 100%;
+}
+.btn-group.right {
+    text-align: right;
+}
+.btn-group.left {
+    text-align: left;
+}
+.btn-group.center {
+    text-align: center;
+}
+.btn-group .button {
+    cursor: pointer;
+}
+
+.btn-group .button.brightness {
+    margin: 1.5% 2.7% !important;
+    box-shadow: 1px 1px 10px 6px rgb(150, 150, 150);
+    filter: grayscale(40%);
+    transition: box-shadow .5s, transform .6s, background-color .5s, filter .5s;
+}
+.btn-group .button.brightness:hover {
+    box-shadow: 1px 1px 20px 9px white;
+    transform: scale(1.1);
+    background-color: rgba(255, 255, 255, 0.6);
+    filter: grayscale(0);
+}
+.btn-group .button.brightness:active {
+    transform: rotateX(180deg);
+}
+
+.btn-group .button.slide {
+    animation-duration: 1.2s;
+    animation-fill-mode: both;
+    animation-timing-function: ease-in-out;
+}
+.btn-group .button.slide,
+.btn-group .button.slide.rtl {
+    animation-name: slide-rtl;
+}
+.btn-group .button.slide.ltr {
+    animation-name: slide-ltr;
+}
+.btn-group .button.slide.ttb {
+    animation-name: slide-ttb;
+}
+.btn-group .button.slide.btt {
+    animation-name: slide-btt;
+}
+
+@keyframes slide-rtl {
+    0% {
+        transform: translateX(2000%) skewX(-60deg);
+        opacity: 0;
+    }
+    80% {
+        transform: translateX(-40%) skewX(10deg);
+        opacity: 0.8;
+    }
+    to {
+        transform: translateX(0) skewX(0);
+        opacity: 1;
+    }
+}
+@keyframes slide-ltr {
+    0% {
+        transform: translateX(-2000%) skewX(60deg);
+        opacity: 0;
+    }
+    80% {
+        transform: translateX(40%) skewX(-10deg);
+        opacity: 0.8;
+    }
+    to {
+        transform: translateX(0) skewX(0);
+        opacity: 1;
+    }
+}
+@keyframes slide-ttb {
+    0% {
+        transform: translateY(-2000%);
+        opacity: 0;
+    }
+    80% {
+        transform: translateY(30%);
+        opacity: 0.3;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+@keyframes slide-btt {
+    0% {
+        transform: translateY(2000%);
+        opacity: 0;
+    }
+    80% {
+        transform: translateY(-30%);
+        opacity: 0.3;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
