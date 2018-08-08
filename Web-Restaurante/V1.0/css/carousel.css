@@ -5,19 +5,19 @@ body > ul {
 ul > li {
     list-style-type: none;
     position: absolute;
-    top: 0;
-    opacity: 0;
-    display: flex;
+    display: inline-block;
     flex-flow: wrap;
-    text-align: justify;
+    text-align: center;
     vertical-align: middle;
-    padding: 3%;
-    transition: 1s opacity;
+    padding: 1%;
+    transform: scale(0);
+    opacity: 0;
+    transition: transform 2s, opacity 3s;
 }
 ul > li > * {
     margin: auto;
 }
-
 .active {
+    transform: scale(1);
     opacity: 1;
 }

@@ -61,5 +61,5 @@ footer .row .col > * {
     margin-top: 80px;
 }
 .body .row .col {
-    padding: 0 !important;
+    padding: 0.5rem !important;
 }
